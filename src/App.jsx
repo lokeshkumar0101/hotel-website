@@ -7,6 +7,8 @@ import Hero from "./Hero"
 import Lenis from "lenis"
 import Catagories from "./Catagories"
 import Inquiry from "./Inquiry"
+import Card from "./Card"
+
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Card />
       <Hero />
       <Catagories />
       <Testimonials />
