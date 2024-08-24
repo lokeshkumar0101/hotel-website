@@ -45,7 +45,7 @@ export default function Inquiry() {
             </p>
 
             <div className="mt-8">
-              <a href="#" className="text-2xl font-bold text-pink-600"> +91-9876543210 </a>
+              <a href="#" className="text-2xl font-bold text-teal-600"> +91-9876543210 </a>
               <address className="mt-2 not-italic">282 Kevin Brook, Imogeneborough, CA 58517</address>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function Inquiry() {
               <div className="mt-4">
                 <button
                   type="submit"
-                  className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                  className="inline-block w-full rounded-lg bg-teal-600 hover:bg-teal-500 active:text-slate-200 px-5 py-3 font-medium text-white sm:w-auto"
                 >
                   {isSubmitting ? (
                     <svg

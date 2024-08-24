@@ -1,14 +1,9 @@
 import React from "react"
-import Navbar from "./Navbar"
-import Testimonials from "./Testimonials"
-import Footer from "./Footer"
-import FaqSection from "./FaqSection"
-import Hero from "./Hero"
+import Navbar from "./Components/Navbar"
+import Footer from "./Components/Footer"
 import Lenis from "lenis"
-import Catagories from "./Catagories"
-import Inquiry from "./Inquiry"
-import Card from "./Card"
 
+import { Outlet } from "react-router-dom"
 
 function App() {
 
@@ -28,12 +23,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Card />
-      <Hero />
-      <Catagories />
-      <Testimonials />
-      <FaqSection />
-      <Inquiry />
+      <Outlet />
       <Footer />
     </>
   )
