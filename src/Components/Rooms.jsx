@@ -7,7 +7,7 @@ const Rooms = () => {
   return (
     <>
     <h3 className='text-3xl text-teal-500 font-bold text-center p-5 '>Our Rooms</h3>
-    <div className='px-32 flex flex-col gap-y-10 mb-10'>
+    <div className='sm:px-32 flex flex-col gap-y-10 mb-10'>
       <Filter />
       <Card />
       <Card />

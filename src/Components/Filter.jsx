@@ -2,7 +2,7 @@ import React from 'react'
 
 const Filter = () => {
   return (
-<div className="flex gap-8">
+<div className="flex gap-8 pl-5 pt-5">
   <div className="relative">
     <details className="group [&_summary::-webkit-details-marker]:hidden">
       <summary

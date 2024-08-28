@@ -22,7 +22,7 @@ const Login = () => {
         <div className="relative">
           <input
             type="email"
-            className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+            className="w-full rounded-lg border border-black p-4 pe-12 text-sm shadow-sm"
             placeholder="Enter email"
           />
 
@@ -51,7 +51,7 @@ const Login = () => {
         <div className="relative">
           <input
             type="password"
-            className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+            className="w-full rounded-lg border border-black p-4 pe-12 text-sm shadow-sm"
             placeholder="Enter password"
           />
 
@@ -82,14 +82,14 @@ const Login = () => {
 
       <button
         type="submit"
-        className="block w-full rounded-lg bg-teal-600 px-5 py-3 text-sm font-medium text-white"
+        className="block w-full rounded-lg bg-teal-600 px-5 py-3 text-sm font-medium text-white active:text-slate-300"
       >
         Sign in
       </button>
 
       <p className="text-center text-sm text-gray-500">
         No account?
-        <NavLink to='register' className="underline">Register</NavLink>
+        <NavLink to='/register' className="underline text-teal-500"> Register</NavLink>
       </p>
     </form>
   </div>

@@ -11,6 +11,7 @@ import Rooms from './Components/Rooms.jsx'
 import Services from './Components/Services.jsx'
 import Login from './Components/Login.jsx'
 import Register from './Components/Register.jsx'
+import Error from './Components/Error.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path='catagories' element={<Catagories />} />
       <Route path='login' element={<Login />} />
       <Route path='register' element={<Register />} />
+      <Route path='*' element={<Error/>} />
 
     </Route>
   )

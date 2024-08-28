@@ -3,6 +3,7 @@ import Testimonials from './Testimonials'
 import FaqSection from './FaqSection'
 import Inquiry from './Inquiry'
 import { Link } from 'react-router-dom'
+import Catagories from './Catagories'
 
 const Hero = () => {
   return (
@@ -38,6 +39,7 @@ const Hero = () => {
         </div>
       </section>
     </div>
+    <Catagories/>
      <Testimonials />
      <FaqSection />
      <Inquiry />
