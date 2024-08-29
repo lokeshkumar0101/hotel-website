@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const Catagories = () => {
   return (
     <section>
-  <div className="mx-auto max-w-screen-xl px-4 sm:px-6 sm:py-12 lg:px-8">
+  <div className="mx-auto max-w-screen-xl px-4 sm:px-6 sm:py-12 lg:px-8 -mt-[420px] sm:mt-0">
     <header className="text-center">
-      <h2 className="text-xl font-bold text-teal-600 sm:text-4xl">Room Catagories</h2>
+      <h2 className="text-3xl font-bold text-teal-600 sm:text-4xl">Room Catagories</h2>
     </header>
 
     <ul className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
