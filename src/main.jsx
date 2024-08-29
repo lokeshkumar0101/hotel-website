@@ -12,6 +12,10 @@ import Services from './Components/Services.jsx'
 import Login from './Components/Login.jsx'
 import Register from './Components/Register.jsx'
 import Error from './Components/Error.jsx'
+import Standard from './Components/Standard.jsx'
+import Premium from './Components/Premium.jsx'
+import Sweet from './Components/Sweet.jsx'
+import Cart from './Components/Cart.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,7 +29,10 @@ const router = createBrowserRouter(
       <Route path='login' element={<Login />} />
       <Route path='register' element={<Register />} />
       <Route path='*' element={<Error/>} />
-
+      <Route path='standard' element={<Standard/>} />
+      <Route path='premium' element={<Premium/>} />
+      <Route path='sweet' element={<Sweet/>} />
+      <Route path='cart' element={<Cart/>} />
     </Route>
   )
 )

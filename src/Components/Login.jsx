@@ -1,7 +1,21 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { account } from '../Config/Appwrite';
 
-const Login = () => {
+const Login = async () => {
+
+const [data, setData] = useState({email: "", password: "",})
+const navigate = useNavigate();
+
+const handleLogin = async () =>{
+try{
+  await account.createEmailSession(data.email, data.password);
+  navigate("/")
+}catch{
+  alert("something went wrong!")
+}
+}
+
   return (
 
 <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
@@ -22,6 +36,7 @@ const Login = () => {
         <div className="relative">
           <input
             type="email"
+            onChange={(e)=>setData({...data, email: e.target.value})}
             className="w-full rounded-lg border border-black p-4 pe-12 text-sm shadow-sm"
             placeholder="Enter email"
           />
@@ -51,6 +66,7 @@ const Login = () => {
         <div className="relative">
           <input
             type="password"
+            onChange={(e)=>setData({...data, password: e.target.value})}
             className="w-full rounded-lg border border-black p-4 pe-12 text-sm shadow-sm"
             placeholder="Enter password"
           />
@@ -82,6 +98,7 @@ const Login = () => {
 
       <button
         type="submit"
+        onClick={handleLogin}
         className="block w-full rounded-lg bg-teal-600 px-5 py-3 text-sm font-medium text-white active:text-slate-300"
       >
         Sign in

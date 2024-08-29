@@ -17,9 +17,9 @@ const Hero = () => {
             <h1
               className="bg-white bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
             >
-              Understand User Flow.
+              Book Your Stay.
 
-              <span className="sm:block"> Increase Conversion. </span>
+              <span className="sm:block"> With Us. </span>
             </h1>
 
             <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">

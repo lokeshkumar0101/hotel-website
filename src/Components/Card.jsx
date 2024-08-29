@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Card = () => {
   return (
@@ -93,6 +94,7 @@ const Card = () => {
           <p className="font-medium">4 rooms</p>
         </div>
       </div>
+      <Link to="/cart" className='px-5 py-3 justify-end rounded-sm bg-teal-500 hover:bg-teal-400 active:text-slate-300 text-white '>Book Now</Link>
     </div>
   </div>
 </a>
